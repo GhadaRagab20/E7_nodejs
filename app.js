@@ -120,9 +120,9 @@ app.get('/web/courses/create',(req,res) =>{
     res.sendFile(__dirname+"/app.html")
 })
 
-// app.get('/web/students/create',(req,res) =>{
-//     res.sendFile(__dirname+"/lms_Student.html")
-// })
+app.get('/web/students/create',(req,res) =>{
+    res.sendFile(__dirname+"/Student.html")
+})
 
 app.get('/',(req,res) =>{
     res.send('Welcome');
