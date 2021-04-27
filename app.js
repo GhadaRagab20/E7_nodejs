@@ -1,7 +1,9 @@
 const express = require('express');
 const Joi = require('joi');
 const app = express();
+var bodyParser = require('body-parser');
 app.use(express.json());
+app.use(bodyParser.urlencoded( {extended : true }));
 
 const Courses=[{name:'control system',code:'CSE321',id:1,desc:''}
 ,{name:'multimedia',code:'CSE322',id:2,desc:''},
